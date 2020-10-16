@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+}
+
+.screen-text {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  padding-right: 7px;
+}
+
+.keys {
+  display: flex;
+}
+
+.key {
+  border: 0.5px solid black;
+  width: 25%;
+  background-color: gray;
+  height: 100px;
+  font-size: 20px;
+}
+
+.key:hover {
+  cursor: pointer;
+  background-color: rgb(146, 146, 146);
+}
+
+.key:active {
+  background-color: dimgrey;
+}
+
+.key:last-child {
+  background-color: peru;
+}
+
+.key:last-child:hover {
+  background-color: rgb(209, 159, 65);
+}
+
+.key:last-child:active {
+  background-color: rgb(209, 150, 0);
+}
+
+.double {
+  flex: 2;
+}
+
+.triple {
+  flex: 3;
+}
